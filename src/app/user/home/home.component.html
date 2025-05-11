@@ -2,9 +2,10 @@
   <div class="row">
     <div class="col-md-3"  *ngFor="let data of foodData">
         <div class = "__area text-center">
-          <a href = "#" class = "__card">
-              <button class = "__favorit"><i class = "la la-heart-o"></i></button>
-            <img [src] = "data.imageurl" class="img-fluid __img" alt="{{data.foodname}}"/>
+          <a class = "__card">
+            <div style="height: 180px;">
+            <img [src] = "data.imageUrl" class="img-fluid __img h-100 w-100" alt="{{data.foodName}}" style=""/>
+            </div>
             <div class = "__card_detail text-left">
               <h4>{{data.foodname}}</h4>
               <p>
@@ -20,7 +21,6 @@
             </div>
           </a>
         </div>
-
     </div>
   </div>
 </div>
