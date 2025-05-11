@@ -1,1 +1,27 @@
-<p>home works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3"  *ngFor="let data of foodData">
+        <div class = "__area text-center">
+          <a href = "#" class = "__card">
+              <button class = "__favorit"><i class = "la la-heart-o"></i></button>
+            <img [src] = "data.imageurl" class="img-fluid __img" alt="{{data.foodname}}"/>
+            <div class = "__card_detail text-left">
+              <h4>{{data.foodname}}</h4>
+              <p>
+               {{data.address}}
+              </p>
+              <div class = "__type">
+                <span>{{data.category}}</span>
+                <span>{{data.location}}</span>
+              </div>
+              <div class = "__detail">
+                <i class = "la la-star-o"></i> <span>{{data.price}}</span> <i class = "la la-clock-o"></i> <span>{{data.rating}}</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+    </div>
+  </div>
+</div>
+
